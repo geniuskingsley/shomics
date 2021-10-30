@@ -1,110 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- Genius style file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <!--======== TOP AREA (TIMER AND FIRST SECTION) ============-->
+      <!--======== TOP AREA (TIMER AND FIRST SECTION) ============-->
+      <div class="navbar navbar-expand-lg bg-light mb-7">
         <div class="launchTimer">
-            <P class="inuLaunchDate">Genroku Inu Launch Date</P>
-            <p class="daysLeft">000<span style="font-size: 12px">days</span></p>
-            <p class="hoursLeft">04<span style="font-size: 12px">hrs</span></p>
-            <p class="minsLeft">33<span style="font-size: 12px">mins</span></p>
-            <p class="secsLeft">07<span style="font-size: 12px">secs</span></p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <p class="inuLaunchDate text-center">Genroku Inu Launch Date</p>
+            </div>
+            <div class="col-md-6">
+              <p class="inuLaunchDate text-center">
+                000 <span style="font-size: 12px">days</span>
+              </p>
+            </div>
+          </div>
         </div>
-        <!-- ======= END OF TOP AREA (TIMER AND FIRST SECTION) =======-->
+      </div>
+      <!-- ======= END OF TOP AREA (TIMER AND FIRST SECTION) =======-->
 
+      <!-- ====== NAV BAR ====== -->
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+        <div class="container">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarButtonsExample"
+            aria-controls="navbarButtonsExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i style="color: #981827" class="fas fa-bars"></i>
+          </button>
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarButtonsExample">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shonomics</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Roadmap</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How-To-Buy</a>
+              </li>
+            </ul>
 
-        <!-- ====== NAV BAR ====== -->
-        <div class="navigation-div">
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Shonomics</a></li>
-                    <li><a href="#">Roadmap</a></li>
-                    <li><a href="#">How-To-Buy</a></li>
-                    <!-- IMAGES PARTS -->
-                    <li class="Landify">
-                        <a href="#"><img src="" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="" alt=""></a>
-                    </li>
-                </ul>
-            </nav>
+            <!-- center logo-->
+            <svg
+              width="105"
+              height="28"
+              viewBox="0 0 105 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class=""
+            >
+              <path
+                d="M0.575348 28H10.0685C14.57 28 18.2192 24.3508 18.2192 19.8493H8.72603C4.22453 19.8493 0.575348 23.4985 0.575348 28Z"
+                fill="#F22BB2"
+              />
+              <path
+                d="M1 8.15069V20.137C5.5015 20.137 9.15069 16.4878 9.15069 11.9863V0C4.64919 0 1 3.64919 1 8.15069Z"
+                fill="#8C30F5"
+              />
+              <path
+                d="M27.4247 0H17.9315C13.43 0 9.78082 3.64919 9.78082 8.15068H19.274C23.7755 8.15068 27.4247 4.5015 27.4247 0Z"
+                fill="#FE9A22"
+              />
+              <path
+                d="M27.4247 19.3699V7.38356C22.9232 7.38356 19.274 11.0327 19.274 15.5342V27.5205C23.7755 27.5205 27.4247 23.8714 27.4247 19.3699Z"
+                fill="#2EC5CE"
+              />
+              <path d="M40.4 17.92V7H37.2V21H45.4V17.92H40.4Z" fill="#0B0D17" />
+              <path
+                d="M53.8717 11V11.94C53.2117 11.18 52.2317 10.72 50.8917 10.72C48.2717 10.72 46.1117 13.02 46.1117 16C46.1117 18.98 48.2717 21.28 50.8917 21.28C52.2317 21.28 53.2117 20.82 53.8717 20.06V21H56.8717V11H53.8717ZM51.4917 18.44C50.1117 18.44 49.1117 17.5 49.1117 16C49.1117 14.5 50.1117 13.56 51.4917 13.56C52.8717 13.56 53.8717 14.5 53.8717 16C53.8717 17.5 52.8717 18.44 51.4917 18.44Z"
+                fill="#0B0D17"
+              />
+              <path
+                d="M64.9327 10.72C63.6127 10.72 62.6127 11.2 62.0727 11.94V11H59.0727V21H62.0727V15.54C62.0727 14.12 62.8327 13.48 63.9327 13.48C64.8927 13.48 65.6727 14.06 65.6727 15.3V21H68.6727V14.86C68.6727 12.16 66.9527 10.72 64.9327 10.72Z"
+                fill="#0B0D17"
+              />
+              <path
+                d="M77.9928 7V11.94C77.3328 11.18 76.3528 10.72 75.0128 10.72C72.3928 10.72 70.2328 13.02 70.2328 16C70.2328 18.98 72.3928 21.28 75.0128 21.28C76.3528 21.28 77.3328 20.82 77.9928 20.06V21H80.9928V7H77.9928ZM75.6128 18.44C74.2328 18.44 73.2328 17.5 73.2328 16C73.2328 14.5 74.2328 13.56 75.6128 13.56C76.9928 13.56 77.9928 14.5 77.9928 16C77.9928 17.5 76.9928 18.44 75.6128 18.44Z"
+                fill="#0B0D17"
+              />
+              <path
+                d="M84.6938 10.12C85.6738 10.12 86.4938 9.3 86.4938 8.32C86.4938 7.34 85.6738 6.52 84.6938 6.52C83.7138 6.52 82.8938 7.34 82.8938 8.32C82.8938 9.3 83.7138 10.12 84.6938 10.12ZM83.1938 21H86.1938V11H83.1938V21Z"
+                fill="#0B0D17"
+              />
+              <path
+                d="M93.8891 9.6V6.72C90.5691 6.52 89.0291 8.2 89.0291 11H87.6891V13.88H89.0291V21H92.0291V13.88H93.8891V11H92.0291C92.0291 9.84 92.7691 9.5 93.8891 9.6Z"
+                fill="#0B0D17"
+              />
+              <path
+                d="M101.681 11L99.8013 17.12L97.5813 11H94.2813L98.2613 20.54C97.8213 21.76 97.1613 22.2 95.7613 22.2V25C98.5613 25.14 100.341 23.88 101.461 20.7L104.881 11H101.681Z"
+                fill="#0B0D17"
+              />
+            </svg>
+            <!-- Left links -->
+            <div class="d-flex align-items-center">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.1"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                  fill="#DECAC3"
+                />
+                <path
+                  d="M21.7415 8.00156C21.5315 8.01684 21.3254 8.06609 21.1313 8.1474H21.1287C20.9423 8.22131 20.0561 8.59408 18.7089 9.15914L13.8811 11.1924C10.4168 12.6508 7.01149 14.087 7.01149 14.087L7.05204 14.0713C7.05204 14.0713 6.81725 14.1485 6.57201 14.3166C6.42049 14.413 6.29012 14.5391 6.18876 14.6874C6.06843 14.8639 5.97164 15.134 6.00761 15.4133C6.06647 15.8855 6.37254 16.1687 6.59228 16.325C6.81464 16.4832 7.02653 16.5571 7.02653 16.5571H7.03176L10.2252 17.633C10.3685 18.0927 11.1984 20.8212 11.3978 21.4497C11.5156 21.8251 11.63 22.0599 11.7732 22.2391C11.8426 22.3306 11.9237 22.4071 12.0211 22.4686C12.0718 22.4981 12.1258 22.5214 12.182 22.5379L12.1493 22.5301C12.1591 22.5327 12.1669 22.5406 12.1741 22.5432C12.2003 22.5504 12.218 22.553 12.2513 22.5582C12.7568 22.7113 13.163 22.3973 13.163 22.3973L13.1859 22.379L15.0713 20.6623L18.2315 23.0866L18.3034 23.1174C18.962 23.4064 19.629 23.2456 19.9815 22.9617C20.3367 22.6759 20.4747 22.3104 20.4747 22.3104L20.4976 22.2515L22.9396 9.74119C23.0089 9.43251 23.0266 9.14344 22.95 8.86288C22.8711 8.57893 22.6889 8.33471 22.4393 8.17814C22.2296 8.05069 21.9865 7.98917 21.7415 8.00156ZM21.6754 9.34226C21.6728 9.38346 21.6806 9.37888 21.6623 9.45801V9.46521L19.2432 21.8454C19.2327 21.863 19.2151 21.9016 19.1667 21.9402C19.1157 21.9807 19.0751 22.0062 18.8626 21.9219L14.9974 18.9586L12.6627 21.0867L13.1532 17.9541L19.4682 12.0681C19.7285 11.8261 19.6415 11.7751 19.6415 11.7751C19.6598 11.4782 19.2484 11.6881 19.2484 11.6881L11.2854 16.6212L11.2827 16.6082L7.46602 15.3231V15.3204L7.45621 15.3185C7.4629 15.3163 7.46945 15.3136 7.47583 15.3106L7.49676 15.3002L7.51703 15.293C7.51703 15.293 10.925 13.8568 14.3892 12.3984C16.1236 11.6679 17.8711 10.9321 19.2151 10.3645C20.559 9.80005 21.5524 9.38607 21.6087 9.36384C21.6623 9.34291 21.6368 9.34291 21.6754 9.34291V9.34226Z"
+                  fill="#981827"
+                />
+              </svg>
+
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.1"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                  fill="#DECAC3"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.5208 13.005L15.5544 13.5586L14.9948 13.4909C12.9579 13.231 11.1784 12.3497 9.66756 10.8696L8.92891 10.1351L8.73865 10.6775C8.33575 11.8864 8.59316 13.1632 9.43253 14.0219C9.8802 14.4964 9.77948 14.5642 9.00725 14.2818C8.73865 14.1914 8.50363 14.1236 8.48124 14.1575C8.4029 14.2366 8.6715 15.2647 8.88414 15.6715C9.17513 16.2364 9.76828 16.7901 10.4174 17.1177L10.9658 17.3776L10.3167 17.3889C9.68994 17.3889 9.66756 17.4002 9.73471 17.6375C9.95854 18.3719 10.8427 19.1515 11.8276 19.4905L12.5214 19.7277L11.9171 20.0893C11.0218 20.609 9.96973 20.9028 8.91772 20.9254C8.41409 20.9367 8 20.9819 8 21.0158C8 21.1288 9.36538 21.7615 10.16 22.0101C12.5438 22.7445 15.3753 22.4281 17.5017 21.174C19.0126 20.2814 20.5235 18.5075 21.2286 16.7901C21.6091 15.8749 21.9896 14.2027 21.9896 13.4005C21.9896 12.8807 22.0232 12.8129 22.6499 12.1915C23.0192 11.8299 23.3662 11.4345 23.4333 11.3215C23.5452 11.1068 23.534 11.1068 22.9633 11.2989C22.012 11.6379 21.8777 11.5927 22.3477 11.0842C22.6947 10.7227 23.1088 10.0673 23.1088 9.87527C23.1088 9.84137 22.9409 9.89787 22.7506 9.99955C22.5492 10.1125 22.1015 10.282 21.7658 10.3837L21.1614 10.5758L20.613 10.2029C20.3108 9.99955 19.8856 9.77358 19.6617 9.70579C19.0909 9.54761 18.218 9.5702 17.7032 9.75098C16.3042 10.2594 15.4201 11.5701 15.5208 13.005Z"
+                  fill="#981827"
+                />
+              </svg>
+
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.1"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                  fill="#DECAC3"
+                />
+                <path
+                  d="M8 14.6833V19.375C8 20.2038 8.32924 20.9987 8.91529 21.5847C9.50134 22.1708 10.2962 22.5 11.125 22.5H21.5417C22.3705 22.5 23.1653 22.1708 23.7514 21.5847C24.3374 20.9987 24.6667 20.2038 24.6667 19.375V14.6833L16.7604 18.2417C16.6261 18.302 16.4806 18.3332 16.3333 18.3332C16.1861 18.3332 16.0405 18.302 15.9062 18.2417L8 14.6833ZM8.07708 12.4333L16.3333 16.15L24.5896 12.4333C24.4327 11.7422 24.0456 11.125 23.4918 10.6828C22.938 10.2407 22.2503 9.9999 21.5417 10H11.125C10.4163 9.9999 9.72867 10.2407 9.17485 10.6828C8.62103 11.125 8.23394 11.7422 8.07708 12.4333Z"
+                  fill="#981827"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- Collapsible wrapper -->
         </div>
-        <!-- ====== END OF NAV BAR ====== -->
+      </nav>
+      <!-- Navbar -->
+      <!-- ====== END OF NAV BAR ====== -->
     </header>
 
     <!--=============== HERO SECTIO ===============-->
-    <section class="hero-section">
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L80,160C160,128,320,64,480,74.7C640,85,800,171,960,192C1120,213,1280,171,1360,149.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 10%; width: 100%;"><path d="M-10.53,-10.69 C150.00,150.00 349.21,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></section>
+    <section class="top-banner p-5">Place Banner Content here</section>
 
     <!--=============== END OF SHERO SECTIO ===============-->
 
-    <section>
-        <h1 class="geoInu">Genroku Inu</h1>
-        <p class="bushi-para">A <span class="bushi">BUSHI</span> who relies on his sword and true form <span class="bushi">Shogun!</span> <br>
-            <br><span class="bushi">Genroku</span>, born as a bushi, had battled between life and death numerous times, while following the Shogun code and saving humanity. <br> With a <span class="bushi">Righteous Heart</span>, holding onto the last
-            days remaining for him. He created an erc-20 token in the hope that humanity would reward him as a worthy bushi who has upheld the shogun code for all his life. <br> With the power of his <span class="bushi">Divine Form Inu</span> , he attempts
-            to control it and even update holders on its status automatically in the Telegram.</p>
+    <section class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="geoInu mt-5">Genroku Inu</h1>
+          <p class="bushi-para">
+            A <span class="bushi">BUSHI</span> who relies on his sword and true
+            form <span class="bushi">Shogun!</span> <br />
+            <br /><span class="bushi">Genroku</span>, born as a bushi, had
+            battled between life and death numerous times, while following the
+            Shogun code and saving humanity. <br />
+            With a <span class="bushi">Righteous Heart</span>, holding onto the
+            last days remaining for him. He created an erc-20 token in the hope
+            that humanity would reward him as a worthy bushi who has upheld the
+            shogun code for all his life. <br />
+            With the power of his <span class="bushi">Divine Form Inu</span> ,
+            he attempts to control it and even update holders on its status
+            automatically in the Telegram.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section class="shonomics">
-        <div class="sho">
-            <h1 class="sho-text">Shonomics</h1>
-            <p class="shoTP">To receive the best memorial token. <br> Shogun implemented the following Shonomics.</p>
-            <p class="shoSmb"> <span class="yes">SYMBOL</span> : $GENROKU <br> <span class="yes">NETWORK: </span> ERC-20 <br> <span class="yes">TOTAL SUPPLY </span> : 1,000,000,000,000 $GENROKU <br> <span class="yes">DECIMALS</span>: 9</p>
-            <p class="shoTaxs"> <span class="yes">10% Tax on transactions</span><br> 6% Marketing Tax <br> 3% Development Tax <br> 1% Reflections</p>
+    <section class="middle-banner mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <h1 class="sho-text mt-5">Shonomics</h1>
+            <p class="shoTP">
+              To receive the best memorial token. <br />
+              Shogun implemented the following Shonomics.
+            </p>
+            <p class="shoSmb">
+              <span class="yes">SYMBOL</span> : $GENROKU <br />
+              <span class="yes">NETWORK: </span> ERC-20 <br />
+              <span class="yes">TOTAL SUPPLY </span> : 1,000,000,000,000
+              $GENROKU
+              <br />
+              <span class="yes">DECIMALS</span>: 9
+            </p>
+            <p class="shoTaxs">
+              <span class="yes">10% Tax on transactions</span><br />
+              6% Marketing Tax <br />
+              3% Development Tax <br />
+              1% Reflections
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-
-    <section>
-        <h2 class="rmap">Roadmap</h2>
-
-        <div class="roadMaps">
-            <div class="v1"></div>
-            <p class="tokenText">Token <br> Whitepaper/Website Reveal <br> Marketing <br> Contract Audit <br> Coingecko Listing <br> Coinmarketcap Listing <br> Giveaway/Competitons <br> Partnerships <br> Utility Reveal <br> CEX Listing <br> and more to be revealed... <br></p>
+    <section class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="rmap">Roadmap</p>
+          <p class="tokenText">
+            Token <br />
+            Whitepaper/Website Reveal <br />
+            Marketing <br />
+            Contract Audit <br />
+            Coingecko Listing <br />
+            Coinmarketcap Listing <br />
+            Giveaway/Competitons <br />
+            Partnerships <br />
+            Utility Reveal <br />
+            CEX Listing <br />
+            and more to be revealed...
+          </p>
         </div>
+      </div>
     </section>
 
-    <section class="howToBuy">
-        <h3 class="howTo">How-To-Buy</h3>
-        <div class="howToInstructions">
-            <p class="how1"> <span class="howToColor">01</span> <br> Download a suitable wallet. MetaMask (Google Chrome Extension) is preferred as it is versatile and can be used for anything Crypto-Related. </p>
-            <p class="how2"><span class="howToColor">02</span> <br> Once you have MetaMask, you need to transfer some Ethereum to the wallet. Buy some Ehereum on any marketplace and transfer it to your wallet.</p>
-            <p class="how3"><span class="howToColor">03</span> <br>Use UniSwap (to the right) or navigate to their official website – https://app.uniswap.org</p>
-            <p class="how4"><span class="howToColor">04</span> <br> Download a suitable wallet. MetaMask (Google Chrome Extension) is preferred as it is versatile and can be used for anything Crypto-Related.</p>
+    <section class="bottom-banner mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <h3 class="howTo mt-5">How-To-Buy</h3>
+            <div class="howToInstructions">
+              <p class="how1">
+                <span class="howToColor">01</span> <br />
+                Download a suitable wallet. MetaMask (Google Chrome Extension)
+                is preferred as it is versatile and can be used for anything
+                Crypto-Related.
+              </p>
+              <p class="how2">
+                <span class="howToColor">02</span> <br />
+                Once you have MetaMask, you need to transfer some Ethereum to
+                the wallet. Buy some Ehereum on any marketplace and transfer it
+                to your wallet.
+              </p>
+              <p class="how3">
+                <span class="howToColor">03</span> <br />Use UniSwap (to the
+                right) or navigate to their official website –
+                https://app.uniswap.org
+              </p>
+              <p class="how4">
+                <span class="howToColor">04</span> <br />
+                Download a suitable wallet. MetaMask (Google Chrome Extension)
+                is preferred as it is versatile and can be used for anything
+                Crypto-Related.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="fftt">
-            <div class="footerNavigation">
-                <h4>About</h4>
-                <h4>Shonomics</h4>
-                <h4>Roadmap</h4>
-                <h4>How-To-Buy</h4>
-            </div>
-            <p class="copyRight"> &copy; 2021 Genroku Inu. All rights reserved</p>
-        </div>
+      <div class="footerNavigation">
+        <h4>About</h4>
+        <h4>Shonomics</h4>
+        <h4>Roadmap</h4>
+        <h4>How-To-Buy</h4>
+      </div>
+      <p class="copyRight">&copy; 2021 Genroku Inu. All rights reserved</p>
     </footer>
-</body>
+  </body>
 
+  <!-- MDB -->
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+  ></script>
 </html>
