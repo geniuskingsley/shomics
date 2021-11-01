@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Genroku Inu</title>
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -20,8 +20,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
       rel="stylesheet"
     />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Genius style file -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="motion.css" />
   </head>
 
   <body>
@@ -34,9 +37,17 @@
               <p class="inuLaunchDate text-center">Genroku Inu Launch Date</p>
             </div>
             <div class="col-md-6">
-              <p class="inuLaunchDate text-center">
-                000 <span style="font-size: 12px">days</span>
-              </p>
+              <p
+                id="demo"
+                class="text-center"
+                style="
+                  color: #decac3;
+                  font-weight: 400;
+                  font-size: 20px;
+                  line-height: 20px;
+                  font-family: Gilroy;
+                "
+              ></p>
             </div>
           </div>
         </div>
@@ -197,14 +208,25 @@
     </header>
 
     <!--=============== HERO SECTIO ===============-->
-    <section class="top-banner p-5">Place Banner Content here</section>
+    <section class="top-banner">
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <img
+            src="images/stand.png"
+            style="width: 100%; height: 100%"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
 
     <!--=============== END OF SHERO SECTIO ===============-->
 
     <section class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1 class="geoInu mt-5">Genroku Inu</h1>
+          <h1 class="geoInu mt-5" data-aos="flip-up">Genroku Inu</h1>
           <p class="bushi-para">
             A <span class="bushi">BUSHI</span> who relies on his sword and true
             form <span class="bushi">Shogun!</span> <br />
@@ -220,15 +242,24 @@
             automatically in the Telegram.
           </p>
         </div>
+        <div class="col-md-6" data-aos="slide-up">
+          <img
+            src="images/adult.png"
+            style="width: 100%; height: 100%"
+            alt=""
+          />
+        </div>
       </div>
     </section>
 
     <section class="middle-banner mt-5 p-5">
-      <div class="container">
+      <div class="container shonomic-downwards">
         <div class="row">
-          <div class="col-md-6"></div>
           <div class="col-md-6">
-            <h1 class="sho-text mt-5">Shonomics</h1>
+            <img src="images/aura.png" class="imgresponsive" alt="" />
+          </div>
+          <div class="col-md-6">
+            <h1 class="sho-text mt-5" data-aos="flip-up">Shonomics</h1>
             <p class="shoTP">
               To receive the best memorial token. <br />
               Shogun implemented the following Shonomics.
@@ -255,7 +286,7 @@
     <section class="container">
       <div class="row">
         <div class="col-md-6">
-          <p class="rmap">Roadmap</p>
+          <p class="rmap" data-aos="flip-up">Roadmap</p>
           <p class="tokenText">
             Token <br />
             Whitepaper/Website Reveal <br />
@@ -270,34 +301,39 @@
             and more to be revealed...
           </p>
         </div>
+        <div class="col-md-6" data-aos="slide-up">
+          <img src="images/teen.png" style="width: 100%" alt="" />
+        </div>
       </div>
     </section>
 
     <section class="bottom-banner mt-5">
-      <div class="container">
+      <div class="container shonomic-downwards">
         <div class="row">
-          <div class="col-md-6"></div>
+          <div class="col-md-6" data-aos="slide-up">
+            <img src="images/child.png" style="width: 100%" alt="" />
+          </div>
           <div class="col-md-6">
-            <h3 class="howTo mt-5">How-To-Buy</h3>
+            <h3 class="howTo mt-5" data-aos="flip-up">How-To-Buy</h3>
             <div class="howToInstructions">
-              <p class="how1">
+              <p class="how1" data-aos="flip-right">
                 <span class="howToColor">01</span> <br />
                 Download a suitable wallet. MetaMask (Google Chrome Extension)
                 is preferred as it is versatile and can be used for anything
                 Crypto-Related.
               </p>
-              <p class="how2">
+              <p class="how2" data-aos="flip-right">
                 <span class="howToColor">02</span> <br />
                 Once you have MetaMask, you need to transfer some Ethereum to
                 the wallet. Buy some Ehereum on any marketplace and transfer it
                 to your wallet.
               </p>
-              <p class="how3">
+              <p class="how3" data-aos="flip-right">
                 <span class="howToColor">03</span> <br />Use UniSwap (to the
                 right) or navigate to their official website –
                 https://app.uniswap.org
               </p>
-              <p class="how4">
+              <p class="how4" data-aos="flip-right">
                 <span class="howToColor">04</span> <br />
                 Download a suitable wallet. MetaMask (Google Chrome Extension)
                 is preferred as it is versatile and can be used for anything
@@ -309,14 +345,23 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="footerNavigation">
-        <h4>About</h4>
-        <h4>Shonomics</h4>
-        <h4>Roadmap</h4>
-        <h4>How-To-Buy</h4>
+    <footer class="footer_bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 text-center">
+            <div class="footerNavigation">
+              <a href="/">About</a><br />
+              <a href="/">Shonomics</a><br />
+              <a href="/">Roadmap</a><br />
+              <a href="/">How-To-Buy</a><br />
+            </div>
+            <p class="mt-3">© 2021 Genroku Inu. All rights reserved</p>
+          </div>
+          <div class="col-md-5 text-center">
+            <img class="text-right" src="images/ino.png" alt="" />
+          </div>
+        </div>
       </div>
-      <p class="copyRight">&copy; 2021 Genroku Inu. All rights reserved</p>
     </footer>
   </body>
 
@@ -325,4 +370,8 @@
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
   ></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./motion.js"></script>
+  <!-- timer -->
 </html>
